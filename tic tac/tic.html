@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board">
+        <div class="board">
+            <div class="cell" onclick="placeSymbol(0, 0)"></div>
+            <div class="cell" onclick="placeSymbol(0, 1)"></div>
+            <div class="cell" onclick="placeSymbol(0, 2)"></div>
+            <div class="cell" onclick="placeSymbol(1, 0)"></div>
+            <div class="cell" onclick="placeSymbol(1, 1)"></div>
+            <div class="cell" onclick="placeSymbol(1, 2)"></div>
+            <div class="cell" onclick="placeSymbol(2, 0)"></div>
+            <div class="cell" onclick="placeSymbol(2, 1)"></div>
+            <div class="cell" onclick="placeSymbol(2, 2)"></div>
+        </div>
+    </div>
+<script src="tic.js"></script>
+</body>
+<style>  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+.cell {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}</style>
+</html>
